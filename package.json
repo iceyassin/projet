@@ -1,0 +1,38 @@
+{
+  "name": "excel-tips-shorts-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Générateur automatisé de vidéos verticales (TikTok/Reels/Shorts) d'astuces Excel avec Remotion, ElevenLabs et un webhook compatible n8n.",
+  "type": "module",
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "studio": "remotion studio src/index.ts",
+    "build": "remotion bundle src/index.ts",
+    "render": "node render.js",
+    "generate": "node generate-video.js",
+    "webhook": "node generate-video.js --serve",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/media-utils": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

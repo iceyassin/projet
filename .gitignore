@@ -1,0 +1,12 @@
+node_modules
+out/*.mp4
+out/*.mov
+out/*.webm
+!out/.gitkeep
+.env
+.DS_Store
+*.log
+public/audio/*.mp3
+!public/audio/.gitkeep
+.remotion
+tmp/
