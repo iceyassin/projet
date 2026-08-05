@@ -67,6 +67,8 @@ export const tutorialHookSchema = z.object({
 	tediumTarget: z.number(),
 	/** Unité affichée après le compteur (ex: "lignes copiées à la main") */
 	tediumUnit: z.string(),
+	/** Phrase "on a tous vécu ça", utilisée dans les vidéos mono-astuce */
+	relatable: z.string().optional(),
 });
 
 export const tutorialRevealSchema = z.object({
@@ -103,3 +105,20 @@ export const tutorialVideoSchema = z.object({
 });
 
 export type TutorialVideoProps = z.infer<typeof tutorialVideoSchema>;
+
+/* -------------------------------------------------------------------------- */
+/*             Vidéo mono-astuce autonome (>= 30s, une astuce par fichier)    */
+/* -------------------------------------------------------------------------- */
+
+export const singleTipVideoSchema = z.object({
+	number: z.number(),
+	total: z.number().default(10),
+	label: z.string(),
+	/** Titre de la série affiché en intro, ex: "10 raccourcis Excel que 99% des gens ignorent" */
+	seriesTitle: z.string(),
+	hook: tutorialHookSchema,
+	reveal: tutorialRevealSchema,
+	accentColor: z.string().default('#21A366'),
+});
+
+export type SingleTipVideoProps = z.infer<typeof singleTipVideoSchema>;

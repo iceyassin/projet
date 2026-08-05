@@ -1,0 +1,28 @@
+{
+  "number": 9,
+  "total": 10,
+  "label": "Raccourcis de correction",
+  "seriesTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "accentColor": "#21A366",
+  "hook": {
+    "caption": "Refaire la même action à la souris ?",
+    "description": "Re-cliquer dans les menus pour chaque correction",
+    "tediumTarget": 15,
+    "tediumUnit": "clics dans le menu Édition",
+    "relatable": "Refaire 3 fois la même mise en forme à la souris... pourquoi ?! 😤"
+  },
+  "reveal": {
+    "caption": "4 touches, toutes les corrections",
+    "excelData": {
+      "category": "shortcut",
+      "formulaName": "Corrections rapides",
+      "shortcuts": [
+        {"label": "Annuler / Rétablir", "keys": "CTRL + Z"},
+        {"label": "Répéter la dernière action", "keys": "F4"},
+        {"label": "Modifier une cellule", "keys": "F2"}
+      ],
+      "before": "Re-cliquer dans les menus",
+      "after": "Un raccourci par correction"
+    }
+  }
+}

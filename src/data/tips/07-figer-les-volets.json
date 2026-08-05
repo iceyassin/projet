@@ -1,0 +1,24 @@
+{
+  "number": 7,
+  "total": 10,
+  "label": "Figer les volets",
+  "seriesTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "accentColor": "#21A366",
+  "hook": {
+    "caption": "Tu reperds les en-têtes à chaque scroll ?",
+    "description": "Remonter tout en haut juste pour relire les titres",
+    "tediumTarget": 9,
+    "tediumUnit": "fois où tu perds les en-têtes",
+    "relatable": "Remonter tout en haut juste pour relire un titre... classique"
+  },
+  "reveal": {
+    "caption": "Les en-têtes restent, tu scrolles",
+    "excelData": {
+      "category": "shortcut",
+      "formulaName": "Figer les volets",
+      "shortcut": "ALT + F + F",
+      "before": "En-têtes perdus au scroll",
+      "after": "En-têtes toujours visibles"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "number": 8,
+  "total": 10,
+  "label": "Remplissage instantané",
+  "seriesTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "accentColor": "#21A366",
+  "hook": {
+    "caption": "Retaper chaque valeur à la main ?",
+    "description": "Extraire un prénom ou un code, ligne après ligne",
+    "tediumTarget": 300,
+    "tediumUnit": "valeurs retapées à la main",
+    "relatable": "Retaper 300 fois la même extraction... aïe 😵"
+  },
+  "reveal": {
+    "caption": "CTRL + E devine le motif",
+    "excelData": {
+      "category": "shortcut",
+      "formulaName": "Remplissage instantané",
+      "shortcut": "CTRL + E",
+      "before": "Retaper chaque valeur",
+      "after": "Colonne complétée d'un coup"
+    }
+  }
+}

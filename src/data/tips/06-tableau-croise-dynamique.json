@@ -1,0 +1,24 @@
+{
+  "number": 6,
+  "total": 10,
+  "label": "Tableau croisé en 1 clic",
+  "seriesTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "accentColor": "#21A366",
+  "hook": {
+    "caption": "L'assistant TCD étape par étape ?",
+    "description": "Suivre tout l'assistant de tableau croisé dynamique",
+    "tediumTarget": 5,
+    "tediumUnit": "étapes de l'assistant",
+    "relatable": "L'assistant TCD qui te redemande 5 fois la même chose 🙃"
+  },
+  "reveal": {
+    "caption": "ALT, N, V : le TCD apparaît",
+    "excelData": {
+      "category": "shortcut",
+      "formulaName": "Tableau croisé dynamique",
+      "shortcut": "ALT + N + V",
+      "before": "Assistant en 5 étapes",
+      "after": "TCD en une séquence"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "number": 3,
+  "total": 10,
+  "label": "RECHERCHEV en 30 secondes",
+  "seriesTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "accentColor": "#21A366",
+  "hook": {
+    "caption": "Copier-coller 430 cellules à la main ?",
+    "description": "Chercher chaque valeur une par une, puis copier-coller",
+    "tediumTarget": 430,
+    "tediumUnit": "cellules copiées-collées",
+    "relatable": "430 copier-coller plus tard, tu regrettes tes choix de vie"
+  },
+  "reveal": {
+    "caption": "Une formule. Toutes les lignes.",
+    "excelData": {
+      "category": "formula",
+      "formulaName": "RECHERCHEV",
+      "formula": "=RECHERCHEV(A2,B:E,3,FAUX)",
+      "before": "Copier-coller à la main",
+      "after": "Résultat en 1 clic"
+    }
+  }
+}

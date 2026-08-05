@@ -1,0 +1,27 @@
+{
+  "number": 1,
+  "total": 10,
+  "label": "Navigation rapide",
+  "seriesTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "accentColor": "#21A366",
+  "hook": {
+    "caption": "Tu scrolles pendant 10 secondes ?",
+    "description": "Descendre à la souris jusqu'en bas du tableau",
+    "tediumTarget": 12,
+    "tediumUnit": "secondes de scroll",
+    "relatable": "On a tous scrollé comme des fous au moins une fois 😅"
+  },
+  "reveal": {
+    "caption": "CTRL + flèche = arrivée instantanée",
+    "excelData": {
+      "category": "shortcut",
+      "formulaName": "Navigation rapide",
+      "shortcuts": [
+        {"label": "Sauter en bout de tableau", "keys": "CTRL + →"},
+        {"label": "Aller au tout début / à la toute fin", "keys": "CTRL + HOME"}
+      ],
+      "before": "10 secondes de scroll",
+      "after": "Arrivée instantanée"
+    }
+  }
+}

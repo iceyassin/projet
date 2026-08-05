@@ -1,0 +1,24 @@
+{
+  "number": 4,
+  "total": 10,
+  "label": "Mise en forme éclair",
+  "seriesTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "accentColor": "#21A366",
+  "hook": {
+    "caption": "Fouiller les menus pour formater une cellule ?",
+    "description": "Naviguer dans le ruban à chaque cellule à formater",
+    "tediumTarget": 6,
+    "tediumUnit": "clics dans les menus",
+    "relatable": "Le ruban Excel, ce labyrinthe sans fin 🌀"
+  },
+  "reveal": {
+    "caption": "CTRL + 1 ouvre tout, direct",
+    "excelData": {
+      "category": "shortcut",
+      "formulaName": "Format de cellule",
+      "shortcut": "CTRL + 1",
+      "before": "Ruban > Format > Cellules",
+      "after": "Dialogue instantané"
+    }
+  }
+}

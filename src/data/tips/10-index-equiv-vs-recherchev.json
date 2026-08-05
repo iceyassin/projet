@@ -1,0 +1,24 @@
+{
+  "number": 10,
+  "total": 10,
+  "label": "INDEX+EQUIV vs RECHERCHEV",
+  "seriesTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "accentColor": "#21A366",
+  "hook": {
+    "caption": "RECHERCHEV casse si tu ajoutes une colonne",
+    "description": "Recompter les colonnes à chaque changement de tableau",
+    "tediumTarget": 3,
+    "tediumUnit": "colonnes qui cassent RECHERCHEV",
+    "relatable": "Ta RECHERCHEV qui casse pile le jour du rendu 💀"
+  },
+  "reveal": {
+    "caption": "INDEX+EQUIV ne casse jamais",
+    "excelData": {
+      "category": "formula",
+      "formulaName": "INDEX + EQUIV",
+      "formula": "=INDEX(C:C,EQUIV(A2,B:B,0))",
+      "before": "RECHERCHEV (fragile)",
+      "after": "INDEX+EQUIV (stable)"
+    }
+  }
+}

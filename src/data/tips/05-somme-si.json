@@ -1,0 +1,24 @@
+{
+  "number": 5,
+  "total": 10,
+  "label": "SOMME.SI en 1 formule",
+  "seriesTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "accentColor": "#21A366",
+  "hook": {
+    "caption": "Additionner ligne par ligne à la main ?",
+    "description": "Filtrer, sélectionner, additionner... et recommencer",
+    "tediumTarget": 1200,
+    "tediumUnit": "lignes additionnées à la main",
+    "relatable": "Additionner à la calculette à côté d'Excel... on a tous fait ça"
+  },
+  "reveal": {
+    "caption": "1 condition, 1 résultat, 0 filtre",
+    "excelData": {
+      "category": "formula",
+      "formulaName": "SOMME.SI",
+      "formula": "=SOMME.SI(B:B,\"Nord\",C:C)",
+      "before": "Filtrer puis additionner",
+      "after": "Total instantané"
+    }
+  }
+}

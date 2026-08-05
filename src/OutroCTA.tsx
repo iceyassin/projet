@@ -5,7 +5,8 @@ export const OutroCTA: React.FC<{
 	title: string;
 	subtitle?: string;
 	accentColor: string;
-}> = ({title, subtitle, accentColor}) => {
+	seriesLabel?: string;
+}> = ({title, subtitle, accentColor, seriesLabel}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 
@@ -40,6 +41,22 @@ export const OutroCTA: React.FC<{
 					gap: 30,
 				}}
 			>
+				{seriesLabel && (
+					<div
+						style={{
+							padding: '8px 22px',
+							borderRadius: 999,
+							background: `${accentColor}22`,
+							border: `2px solid ${accentColor}`,
+							color: accentColor,
+							fontFamily: 'Arial, Helvetica, sans-serif',
+							fontWeight: 800,
+							fontSize: 22,
+						}}
+					>
+						{seriesLabel}
+					</div>
+				)}
 				<div
 					style={{
 						fontFamily: '"Arial Black", Arial, Helvetica, sans-serif',

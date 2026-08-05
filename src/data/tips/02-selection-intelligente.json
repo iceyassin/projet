@@ -1,0 +1,28 @@
+{
+  "number": 2,
+  "total": 10,
+  "label": "Sélection intelligente",
+  "seriesTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "accentColor": "#21A366",
+  "hook": {
+    "caption": "Sélectionner 500 lignes à la souris ?",
+    "description": "Glisser la souris sur tout le tableau, en tremblant",
+    "tediumTarget": 500,
+    "tediumUnit": "lignes glissées à la souris",
+    "relatable": "Ta main qui tremble à la fin du glisser-déposer... on connaît 😩"
+  },
+  "reveal": {
+    "caption": "3 raccourcis, 0 tremblement",
+    "excelData": {
+      "category": "shortcut",
+      "formulaName": "Sélection intelligente",
+      "shortcuts": [
+        {"label": "Étendre la sélection", "keys": "CTRL + SHIFT + →"},
+        {"label": "Tout sélectionner", "keys": "CTRL + A"},
+        {"label": "Mode sélection étendue", "keys": "F8"}
+      ],
+      "before": "Glisser la souris",
+      "after": "Sélection en 1 geste"
+    }
+  }
+}

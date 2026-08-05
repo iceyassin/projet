@@ -1,11 +1,14 @@
 import React from 'react';
 import {Composition} from 'remotion';
 import {ExcelTipsVideo} from './Composition';
+import {SingleTipVideo} from './SingleTipVideo';
 import {ExcelTutorialVideo} from './TutorialComposition';
 import {buildTutorialTimeline} from './tutorial/timeline';
-import {excelTipsVideoSchema, tutorialVideoSchema} from './types';
+import {SINGLE_TIP_TOTAL_FRAMES} from './tutorial/singleTipTimeline';
+import {excelTipsVideoSchema, singleTipVideoSchema, tutorialVideoSchema} from './types';
 import exampleData from './data/example.json';
 import tutorialData from './data/tutorial-10-tips.json';
+import singleTipData from './data/tips/01-navigation-rapide.json';
 
 const FPS = 30;
 const WIDTH = 1080;
@@ -41,6 +44,17 @@ export const RemotionRoot: React.FC = () => {
 				calculateMetadata={async ({props}) => ({
 					durationInFrames: buildTutorialTimeline(props, FPS).totalFrames,
 				})}
+			/>
+
+			<Composition
+				id="ExcelTipSingle"
+				component={SingleTipVideo}
+				durationInFrames={SINGLE_TIP_TOTAL_FRAMES}
+				fps={FPS}
+				width={WIDTH}
+				height={HEIGHT}
+				schema={singleTipVideoSchema}
+				defaultProps={singleTipVideoSchema.parse(singleTipData)}
 			/>
 		</>
 	);
