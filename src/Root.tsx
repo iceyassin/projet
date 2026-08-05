@@ -2,6 +2,9 @@ import React from 'react';
 import {Composition} from 'remotion';
 import {ExcelTipsVideo} from './Composition';
 import {SingleTipVideo} from './SingleTipVideo';
+import {LiveExcelCtrlT} from './LiveExcelCtrlT';
+import {LiveExcelAutoSum} from './LiveExcelAutoSum';
+import {LiveExcelFillHandle} from './LiveExcelFillHandle';
 import {ExcelTutorialVideo} from './TutorialComposition';
 import {buildTutorialTimeline} from './tutorial/timeline';
 import {SINGLE_TIP_TOTAL_FRAMES} from './tutorial/singleTipTimeline';
@@ -55,6 +58,33 @@ export const RemotionRoot: React.FC = () => {
 				height={HEIGHT}
 				schema={singleTipVideoSchema}
 				defaultProps={singleTipVideoSchema.parse(singleTipData)}
+			/>
+
+			<Composition
+				id="LiveExcelCtrlT"
+				component={LiveExcelCtrlT}
+				durationInFrames={598}
+				fps={FPS}
+				width={WIDTH}
+				height={HEIGHT}
+			/>
+
+			<Composition
+				id="LiveExcelAutoSum"
+				component={LiveExcelAutoSum}
+				durationInFrames={926}
+				fps={FPS}
+				width={WIDTH}
+				height={HEIGHT}
+			/>
+
+			<Composition
+				id="LiveExcelFillHandle"
+				component={LiveExcelFillHandle}
+				durationInFrames={920}
+				fps={FPS}
+				width={WIDTH}
+				height={HEIGHT}
 			/>
 		</>
 	);
