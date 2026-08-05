@@ -10,6 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export const COMPOSITION_ID = 'ExcelTipsShort';
 const ENTRY_POINT = path.join(__dirname, 'src', 'index.ts');
+export const KNOWN_COMPOSITIONS = ['ExcelTipsShort', 'Excel10TipsTutorial'];
 
 // Permet de pointer vers un binaire Chrome/Chromium déjà installé (ex : environnements
 // sandboxés sans accès au téléchargeur de Remotion). Sinon, Remotion télécharge
@@ -22,7 +23,8 @@ const BROWSER_EXECUTABLE =
  * Bundle la composition Remotion et rend la vidéo d'astuce Excel en .mp4.
  *
  * @param {object} options
- * @param {object} options.inputProps - Props de la composition (title, script, excelData, words, audioUrl, accentColor).
+ * @param {object} options.inputProps - Props de la composition (dépend de la composition ciblée).
+ * @param {string} [options.compositionId] - Id de la composition Remotion (par défaut "ExcelTipsShort").
  * @param {string} [options.outputFileName] - Nom du fichier .mp4 de sortie.
  * @param {string} [options.outDir] - Dossier de sortie (par défaut ./out).
  * @param {(progress: number) => void} [options.onProgress] - Callback de progression (0 à 1).
@@ -30,6 +32,7 @@ const BROWSER_EXECUTABLE =
  */
 export async function renderExcelVideo({
 	inputProps,
+	compositionId = COMPOSITION_ID,
 	outputFileName = `excel-tip-${Date.now()}.mp4`,
 	outDir = path.join(__dirname, 'out'),
 	onProgress,
@@ -46,10 +49,10 @@ export async function renderExcelVideo({
 		webpackOverride: (config) => config,
 	});
 
-	console.log('🎬 Sélection de la composition...');
+	console.log(`🎬 Sélection de la composition "${compositionId}"...`);
 	const composition = await selectComposition({
 		serveUrl: bundleLocation,
-		id: COMPOSITION_ID,
+		id: compositionId,
 		inputProps,
 		browserExecutable: BROWSER_EXECUTABLE,
 	});
@@ -80,16 +83,18 @@ const isMainModule = () => {
 	return import.meta.url === `file://${path.resolve(process.argv[1])}`;
 };
 
-// Exécution directe en CLI : node render.js [chemin/vers/data.json] [nomSortie.mp4]
+// Exécution directe en CLI :
+//   node render.js [chemin/vers/data.json] [nomSortie.mp4] [compositionId]
 if (isMainModule()) {
 	const dataPath =
 		process.argv[2] ?? path.join(__dirname, 'src', 'data', 'example.json');
 	const outputFileName = process.argv[3];
+	const compositionId = process.argv[4] ?? COMPOSITION_ID;
 
 	const raw = await readFile(path.resolve(dataPath), 'utf-8');
 	const inputProps = JSON.parse(raw);
 
-	renderExcelVideo({inputProps, outputFileName}).catch((err) => {
+	renderExcelVideo({inputProps, outputFileName, compositionId}).catch((err) => {
 		console.error('❌ Échec du rendu :', err);
 		process.exit(1);
 	});

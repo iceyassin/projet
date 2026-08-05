@@ -12,13 +12,24 @@ export const wordTimingSchema = z.object({
 
 export type WordTiming = z.infer<typeof wordTimingSchema>;
 
+export const shortcutEntrySchema = z.object({
+	/** Petit label au-dessus des touches, ex: "Sélectionner toute la feuille" */
+	label: z.string().optional(),
+	/** Ex: "CTRL + A" */
+	keys: z.string(),
+});
+
+export type ShortcutEntry = z.infer<typeof shortcutEntrySchema>;
+
 export const excelDataSchema = z.object({
 	/** Ex: "XLOOKUP", "Tableaux croisés dynamiques" */
 	formulaName: z.string().optional(),
 	/** Ex: "=XLOOKUP(A2,B:B,C:C)" */
 	formula: z.string().optional(),
-	/** Ex: "CTRL + SHIFT + L" */
+	/** Ex: "CTRL + SHIFT + L" (un seul raccourci) */
 	shortcut: z.string().optional(),
+	/** Plusieurs raccourcis à afficher en pile (prioritaire sur `shortcut` si fourni) */
+	shortcuts: z.array(shortcutEntrySchema).optional(),
 	/** Texte court décrivant l'état "avant" (ex: "Recherche manuelle") */
 	before: z.string().optional(),
 	/** Texte court décrivant l'état "après" (ex: "Résultat instantané") */
@@ -42,3 +53,53 @@ export const excelTipsVideoSchema = z.object({
 });
 
 export type ExcelTipsVideoProps = z.infer<typeof excelTipsVideoSchema>;
+
+/* -------------------------------------------------------------------------- */
+/*                       Tutoriel multi-astuces (sans voix-off)               */
+/* -------------------------------------------------------------------------- */
+
+export const tutorialHookSchema = z.object({
+	/** Bandeau affiché pendant la phase "méthode lente", ex: "LA MÉTHODE LENTE" */
+	caption: z.string(),
+	/** Phrase courte décrivant ce que fait la méthode manuelle */
+	description: z.string(),
+	/** Nombre vers lequel le compteur de pénibilité s'anime (ex: 500) */
+	tediumTarget: z.number(),
+	/** Unité affichée après le compteur (ex: "lignes copiées à la main") */
+	tediumUnit: z.string(),
+});
+
+export const tutorialRevealSchema = z.object({
+	/** Bandeau affiché pendant la révélation, ex: "LA MÉTHODE RAPIDE" */
+	caption: z.string(),
+	excelData: excelDataSchema,
+});
+
+export const tutorialStepSchema = z.object({
+	number: z.number(),
+	/** Ex: "Navigation rapide" */
+	label: z.string(),
+	hook: tutorialHookSchema,
+	reveal: tutorialRevealSchema,
+	/** Durée de la phase "méthode lente", en secondes */
+	hookSeconds: z.number().default(2.5),
+	/** Durée de la phase "révélation", en secondes */
+	revealSeconds: z.number().default(3.5),
+});
+
+export type TutorialStep = z.infer<typeof tutorialStepSchema>;
+
+export const tutorialVideoSchema = z.object({
+	introTitle: z.string(),
+	introSubtitle: z.string().optional(),
+	outroTitle: z.string(),
+	outroSubtitle: z.string().optional(),
+	accentColor: z.string().default('#21A366'),
+	steps: z.array(tutorialStepSchema),
+	introSeconds: z.number().default(3),
+	outroSeconds: z.number().default(3),
+	/** URL publique ou chemin local (staticFile) vers une musique de fond, optionnel */
+	musicUrl: z.string().optional(),
+});
+
+export type TutorialVideoProps = z.infer<typeof tutorialVideoSchema>;

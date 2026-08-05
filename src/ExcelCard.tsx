@@ -7,13 +7,14 @@ import {
 } from 'remotion';
 import type {ExcelData} from './types';
 
-const KeyCap: React.FC<{children: React.ReactNode; accentColor: string}> = ({
-	children,
-	accentColor,
-}) => (
+const KeyCap: React.FC<{
+	children: React.ReactNode;
+	accentColor: string;
+	compact?: boolean;
+}> = ({children, accentColor, compact}) => (
 	<div
 		style={{
-			padding: '14px 26px',
+			padding: compact ? '10px 20px' : '14px 26px',
 			borderRadius: 14,
 			background: 'linear-gradient(180deg, #2A2F2E 0%, #1A1E1D 100%)',
 			border: `2px solid ${accentColor}66`,
@@ -22,11 +23,46 @@ const KeyCap: React.FC<{children: React.ReactNode; accentColor: string}> = ({
 			color: '#F4FBF8',
 			fontFamily: 'Arial, Helvetica, sans-serif',
 			fontWeight: 800,
-			fontSize: 34,
+			fontSize: compact ? 26 : 34,
 			letterSpacing: 1,
 		}}
 	>
 		{children}
+	</div>
+);
+
+const KeyCapRow: React.FC<{
+	keys: string;
+	accentColor: string;
+	compact?: boolean;
+}> = ({keys, accentColor, compact}) => (
+	<div
+		style={{
+			display: 'flex',
+			alignItems: 'center',
+			justifyContent: 'center',
+			gap: compact ? 10 : 14,
+			flexWrap: 'wrap',
+		}}
+	>
+		{keys.split('+').map((key, i, arr) => (
+			<React.Fragment key={i}>
+				<KeyCap accentColor={accentColor} compact={compact}>
+					{key.trim()}
+				</KeyCap>
+				{i < arr.length - 1 && (
+					<span
+						style={{
+							color: '#F4FBF8',
+							fontSize: compact ? 22 : 30,
+							fontWeight: 800,
+						}}
+					>
+						+
+					</span>
+				)}
+			</React.Fragment>
+		))}
 	</div>
 );
 
@@ -55,6 +91,7 @@ export const ExcelCard: React.FC<{
 		formula = '',
 		formulaName,
 		shortcut,
+		shortcuts,
 		before,
 		after,
 		category = 'formula',
@@ -197,29 +234,47 @@ export const ExcelCard: React.FC<{
 				<MiniSheet accentColor={accentColor} highlight={resultPulse} />
 			</div>
 
-			{/* Raccourci clavier */}
-			{category === 'shortcut' && shortcut && (
+			{/* Raccourci(s) clavier */}
+			{category === 'shortcut' && shortcuts && shortcuts.length > 0 && (
 				<div
 					style={{
 						display: 'flex',
-						justifyContent: 'center',
+						flexDirection: 'column',
 						alignItems: 'center',
-						gap: 14,
-						background: '#12191700',
-						padding: '36px 26px 30px',
-						flexWrap: 'wrap',
+						gap: 22,
+						padding: '30px 26px 26px',
 					}}
 				>
-					{shortcut.split('+').map((key, i, arr) => (
-						<React.Fragment key={i}>
-							<KeyCap accentColor={accentColor}>{key.trim()}</KeyCap>
-							{i < arr.length - 1 && (
-								<span style={{color: '#F4FBF8', fontSize: 30, fontWeight: 800}}>
-									+
-								</span>
+					{shortcuts.map((s, i) => (
+						<div
+							key={i}
+							style={{
+								display: 'flex',
+								flexDirection: 'column',
+								alignItems: 'center',
+								gap: 10,
+							}}
+						>
+							{s.label && (
+								<div
+									style={{
+										color: '#CFE9DD',
+										fontSize: 20,
+										fontWeight: 700,
+										fontFamily: 'Arial, Helvetica, sans-serif',
+									}}
+								>
+									{s.label}
+								</div>
 							)}
-						</React.Fragment>
+							<KeyCapRow keys={s.keys} accentColor={accentColor} compact />
+						</div>
 					))}
+				</div>
+			)}
+			{category === 'shortcut' && !shortcuts?.length && shortcut && (
+				<div style={{padding: '36px 26px 30px'}}>
+					<KeyCapRow keys={shortcut} accentColor={accentColor} />
 				</div>
 			)}
 

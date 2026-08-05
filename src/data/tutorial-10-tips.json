@@ -1,0 +1,242 @@
+{
+  "introTitle": "10 raccourcis Excel que 99% des gens ignorent",
+  "introSubtitle": "Regarde jusqu'à la fin 👀",
+  "outroTitle": "Enregistre cette vidéo et entraîne-toi",
+  "outroSubtitle": "Nouvelle astuce Excel chaque semaine",
+  "accentColor": "#21A366",
+  "introSeconds": 3,
+  "outroSeconds": 3,
+  "steps": [
+    {
+      "number": 1,
+      "label": "Navigation rapide",
+      "hookSeconds": 2.5,
+      "revealSeconds": 3,
+      "hook": {
+        "caption": "Tu scrolles pendant 10 secondes ?",
+        "description": "Descendre à la souris jusqu'en bas du tableau",
+        "tediumTarget": 12,
+        "tediumUnit": "secondes de scroll"
+      },
+      "reveal": {
+        "caption": "CTRL + flèche = arrivée instantanée",
+        "excelData": {
+          "category": "shortcut",
+          "formulaName": "Navigation rapide",
+          "shortcuts": [
+            {"label": "Sauter en bout de tableau", "keys": "CTRL + →"},
+            {"label": "Aller au tout début / à la toute fin", "keys": "CTRL + HOME"}
+          ],
+          "before": "10 secondes de scroll",
+          "after": "Arrivée instantanée"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "label": "Sélection intelligente",
+      "hookSeconds": 2.5,
+      "revealSeconds": 3.5,
+      "hook": {
+        "caption": "Sélectionner 500 lignes à la souris ?",
+        "description": "Glisser la souris sur tout le tableau, en tremblant",
+        "tediumTarget": 500,
+        "tediumUnit": "lignes glissées à la souris"
+      },
+      "reveal": {
+        "caption": "3 raccourcis, 0 tremblement",
+        "excelData": {
+          "category": "shortcut",
+          "formulaName": "Sélection intelligente",
+          "shortcuts": [
+            {"label": "Étendre la sélection", "keys": "CTRL + SHIFT + →"},
+            {"label": "Tout sélectionner", "keys": "CTRL + A"},
+            {"label": "Mode sélection étendue", "keys": "F8"}
+          ],
+          "before": "Glisser la souris",
+          "after": "Sélection en 1 geste"
+        }
+      }
+    },
+    {
+      "number": 3,
+      "label": "RECHERCHEV en 30 secondes",
+      "hookSeconds": 2.5,
+      "revealSeconds": 4.5,
+      "hook": {
+        "caption": "Copier-coller 430 cellules à la main ?",
+        "description": "Chercher chaque valeur une par une, puis copier-coller",
+        "tediumTarget": 430,
+        "tediumUnit": "cellules copiées-collées"
+      },
+      "reveal": {
+        "caption": "Une formule. Toutes les lignes.",
+        "excelData": {
+          "category": "formula",
+          "formulaName": "RECHERCHEV",
+          "formula": "=RECHERCHEV(A2,B:E,3,FAUX)",
+          "before": "Copier-coller à la main",
+          "after": "Résultat en 1 clic"
+        }
+      }
+    },
+    {
+      "number": 4,
+      "label": "Mise en forme éclair",
+      "hookSeconds": 2.5,
+      "revealSeconds": 3.5,
+      "hook": {
+        "caption": "Fouiller les menus pour formater une cellule ?",
+        "description": "Naviguer dans le ruban à chaque cellule à formater",
+        "tediumTarget": 6,
+        "tediumUnit": "clics dans les menus"
+      },
+      "reveal": {
+        "caption": "CTRL + 1 ouvre tout, direct",
+        "excelData": {
+          "category": "shortcut",
+          "formulaName": "Format de cellule",
+          "shortcut": "CTRL + 1",
+          "before": "Ruban > Format > Cellules",
+          "after": "Dialogue instantané"
+        }
+      }
+    },
+    {
+      "number": 5,
+      "label": "SOMME.SI en 1 formule",
+      "hookSeconds": 2.5,
+      "revealSeconds": 4,
+      "hook": {
+        "caption": "Additionner ligne par ligne à la main ?",
+        "description": "Filtrer, sélectionner, additionner... et recommencer",
+        "tediumTarget": 1200,
+        "tediumUnit": "lignes additionnées à la main"
+      },
+      "reveal": {
+        "caption": "1 condition, 1 résultat, 0 filtre",
+        "excelData": {
+          "category": "formula",
+          "formulaName": "SOMME.SI",
+          "formula": "=SOMME.SI(B:B,\"Nord\",C:C)",
+          "before": "Filtrer puis additionner",
+          "after": "Total instantané"
+        }
+      }
+    },
+    {
+      "number": 6,
+      "label": "Tableau croisé en 1 clic",
+      "hookSeconds": 2.5,
+      "revealSeconds": 3.5,
+      "hook": {
+        "caption": "L'assistant TCD étape par étape ?",
+        "description": "Suivre tout l'assistant de tableau croisé dynamique",
+        "tediumTarget": 5,
+        "tediumUnit": "étapes de l'assistant"
+      },
+      "reveal": {
+        "caption": "ALT, N, V : le TCD apparaît",
+        "excelData": {
+          "category": "shortcut",
+          "formulaName": "Tableau croisé dynamique",
+          "shortcut": "ALT + N + V",
+          "before": "Assistant en 5 étapes",
+          "after": "TCD en une séquence"
+        }
+      }
+    },
+    {
+      "number": 7,
+      "label": "Figer les volets",
+      "hookSeconds": 2.5,
+      "revealSeconds": 3,
+      "hook": {
+        "caption": "Tu reperds les en-têtes à chaque scroll ?",
+        "description": "Remonter tout en haut juste pour relire les titres",
+        "tediumTarget": 9,
+        "tediumUnit": "fois où tu perds les en-têtes"
+      },
+      "reveal": {
+        "caption": "Les en-têtes restent, tu scrolles",
+        "excelData": {
+          "category": "shortcut",
+          "formulaName": "Figer les volets",
+          "shortcut": "ALT + F + F",
+          "before": "En-têtes perdus au scroll",
+          "after": "En-têtes toujours visibles"
+        }
+      }
+    },
+    {
+      "number": 8,
+      "label": "Remplissage instantané",
+      "hookSeconds": 2.5,
+      "revealSeconds": 3.5,
+      "hook": {
+        "caption": "Retaper chaque valeur à la main ?",
+        "description": "Extraire un prénom ou un code, ligne après ligne",
+        "tediumTarget": 300,
+        "tediumUnit": "valeurs retapées à la main"
+      },
+      "reveal": {
+        "caption": "CTRL + E devine le motif",
+        "excelData": {
+          "category": "shortcut",
+          "formulaName": "Remplissage instantané",
+          "shortcut": "CTRL + E",
+          "before": "Retaper chaque valeur",
+          "after": "Colonne complétée d'un coup"
+        }
+      }
+    },
+    {
+      "number": 9,
+      "label": "Raccourcis de correction",
+      "hookSeconds": 2.5,
+      "revealSeconds": 3.5,
+      "hook": {
+        "caption": "Refaire la même action à la souris ?",
+        "description": "Re-cliquer dans les menus pour chaque correction",
+        "tediumTarget": 15,
+        "tediumUnit": "clics dans le menu Édition"
+      },
+      "reveal": {
+        "caption": "4 touches, toutes les corrections",
+        "excelData": {
+          "category": "shortcut",
+          "formulaName": "Corrections rapides",
+          "shortcuts": [
+            {"label": "Annuler / Rétablir", "keys": "CTRL + Z"},
+            {"label": "Répéter la dernière action", "keys": "F4"},
+            {"label": "Modifier une cellule", "keys": "F2"}
+          ],
+          "before": "Re-cliquer dans les menus",
+          "after": "Un raccourci par correction"
+        }
+      }
+    },
+    {
+      "number": 10,
+      "label": "INDEX+EQUIV vs RECHERCHEV",
+      "hookSeconds": 2.5,
+      "revealSeconds": 4,
+      "hook": {
+        "caption": "RECHERCHEV casse si tu ajoutes une colonne",
+        "description": "Recompter les colonnes à chaque changement de tableau",
+        "tediumTarget": 3,
+        "tediumUnit": "colonnes qui cassent RECHERCHEV"
+      },
+      "reveal": {
+        "caption": "INDEX+EQUIV ne casse jamais",
+        "excelData": {
+          "category": "formula",
+          "formulaName": "INDEX + EQUIV",
+          "formula": "=INDEX(C:C,EQUIV(A2,B:B,0))",
+          "before": "RECHERCHEV (fragile)",
+          "after": "INDEX+EQUIV (stable)"
+        }
+      }
+    }
+  ]
+}
