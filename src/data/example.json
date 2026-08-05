@@ -1,20 +1,20 @@
 {
   "title": "La formule qui remplace RECHERCHEV",
-  "script": "Arrete d'utiliser RECHERCHEV. Utilise plutot XLOOKUP. Elle est plus rapide, plus simple, et elle cherche dans les deux sens. Tape juste ta valeur, la colonne de recherche, et la colonne de resultat. Un vrai gain de temps.",
+  "script": "Arrête d'utiliser RECHERCHEV. Utilise plutôt XLOOKUP. Elle est plus rapide, plus simple, et elle cherche dans les deux sens. Tape juste ta valeur, la colonne de recherche, et la colonne de résultat. Un vrai gain de temps.",
   "excelData": {
     "formulaName": "XLOOKUP",
     "formula": "=XLOOKUP(A2,B:B,C:C)",
     "before": "Recherche manuelle",
-    "after": "Resultat instantane",
+    "after": "Résultat instantané",
     "category": "formula"
   },
   "accentColor": "#21A366",
   "words": [
-    {"text": "Arrete", "start": 0.0, "end": 0.42},
+    {"text": "Arrête", "start": 0.0, "end": 0.42},
     {"text": "d'utiliser", "start": 0.42, "end": 0.9},
     {"text": "RECHERCHEV.", "start": 0.9, "end": 1.6},
     {"text": "Utilise", "start": 2.0, "end": 2.4},
-    {"text": "plutot", "start": 2.4, "end": 2.75},
+    {"text": "plutôt", "start": 2.4, "end": 2.75},
     {"text": "XLOOKUP.", "start": 2.75, "end": 3.5},
     {"text": "Elle", "start": 4.0, "end": 4.2},
     {"text": "est", "start": 4.2, "end": 4.35},
@@ -41,7 +41,7 @@
     {"text": "la", "start": 11.15, "end": 11.25},
     {"text": "colonne", "start": 11.25, "end": 11.65},
     {"text": "de", "start": 11.65, "end": 11.75},
-    {"text": "resultat.", "start": 11.75, "end": 12.4},
+    {"text": "résultat.", "start": 11.75, "end": 12.4},
     {"text": "Un", "start": 13.0, "end": 13.15},
     {"text": "vrai", "start": 13.15, "end": 13.4},
     {"text": "gain", "start": 13.4, "end": 13.65},

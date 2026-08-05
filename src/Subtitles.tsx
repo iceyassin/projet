@@ -21,7 +21,9 @@ const Word: React.FC<{
 		durationInFrames: 10,
 	});
 
-	const scale = isActive ? interpolate(pop, [0, 1], [1, 1.16]) : 1;
+	// Amplitude volontairement modérée : un `transform: scale` ne réserve pas
+	// d'espace en layout, un mot trop agrandi chevaucherait ses voisins.
+	const scale = isActive ? interpolate(pop, [0, 1], [1, 1.08]) : 1;
 
 	return (
 		<span
@@ -29,10 +31,11 @@ const Word: React.FC<{
 				display: 'inline-block',
 				transform: `scale(${scale})`,
 				color: isActive || hasPassed ? accentColor : '#FFFFFF',
-				WebkitTextStroke: '10px #000000',
+				WebkitTextStroke: '9px #000000',
 				paintOrder: 'stroke fill',
 				textShadow: '0 6px 0 rgba(0,0,0,0.35)',
-				marginRight: 18,
+				marginRight: 26,
+				marginLeft: 6,
 				transition: 'color 0.05s linear',
 			}}
 		>

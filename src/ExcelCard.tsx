@@ -240,11 +240,11 @@ export const ExcelCard: React.FC<{
 							style={{
 								padding: '12px 20px',
 								borderRadius: 12,
-								background: '#3a1f1f',
-								color: '#FFD6D6',
+								background: '#FBE9E9',
+								color: '#9A3131',
 								fontWeight: 700,
 								fontSize: 22,
-								border: '2px solid #7a3b3b',
+								border: '2px solid #E7B4B4',
 							}}
 						>
 							✗ {before}
@@ -258,8 +258,8 @@ export const ExcelCard: React.FC<{
 							style={{
 								padding: '12px 20px',
 								borderRadius: 12,
-								background: `${accentColor}22`,
-								color: '#D9FBEA',
+								background: '#E3F6EC',
+								color: '#0B6B3A',
 								fontWeight: 700,
 								fontSize: 22,
 								border: `2px solid ${accentColor}`,
