@@ -1,0 +1,447 @@
+[
+  {
+    "text": "Arrête",
+    "start": 0,
+    "end": 0.32
+  },
+  {
+    "text": "de",
+    "start": 0.39,
+    "end": 0.5
+  },
+  {
+    "text": "faire",
+    "start": 0.53,
+    "end": 0.8
+  },
+  {
+    "text": "ça",
+    "start": 0.86,
+    "end": 0.96
+  },
+  {
+    "text": "sur",
+    "start": 0.99,
+    "end": 1.15
+  },
+  {
+    "text": "Excel",
+    "start": 1.18,
+    "end": 1.45
+  },
+  {
+    "text": "!",
+    "start": 1.51,
+    "end": 1.78
+  },
+  {
+    "text": "Tu",
+    "start": 1.84,
+    "end": 1.95
+  },
+  {
+    "text": "cliques",
+    "start": 1.97,
+    "end": 2.35
+  },
+  {
+    "text": "cellule",
+    "start": 2.44,
+    "end": 2.81
+  },
+  {
+    "text": "par",
+    "start": 2.9,
+    "end": 3.06
+  },
+  {
+    "text": "cellule",
+    "start": 3.09,
+    "end": 3.47
+  },
+  {
+    "text": "pour",
+    "start": 3.55,
+    "end": 3.77
+  },
+  {
+    "text": "additionner",
+    "start": 3.82,
+    "end": 4.41
+  },
+  {
+    "text": "les",
+    "start": 4.54,
+    "end": 4.7
+  },
+  {
+    "text": "ventes",
+    "start": 4.74,
+    "end": 5.06
+  },
+  {
+    "text": "de",
+    "start": 5.13,
+    "end": 5.24
+  },
+  {
+    "text": "chaque",
+    "start": 5.27,
+    "end": 5.59
+  },
+  {
+    "text": "vendeur...",
+    "start": 5.66,
+    "end": 6.52
+  },
+  {
+    "text": "et",
+    "start": 6.71,
+    "end": 6.82
+  },
+  {
+    "text": "tu",
+    "start": 6.85,
+    "end": 6.95
+  },
+  {
+    "text": "perds",
+    "start": 6.98,
+    "end": 7.25
+  },
+  {
+    "text": "cinq",
+    "start": 7.31,
+    "end": 7.52
+  },
+  {
+    "text": "minutes",
+    "start": 7.57,
+    "end": 7.95
+  },
+  {
+    "text": "à",
+    "start": 8.03,
+    "end": 8.09
+  },
+  {
+    "text": "chaque",
+    "start": 8.1,
+    "end": 8.42
+  },
+  {
+    "text": "fois.",
+    "start": 8.49,
+    "end": 8.98
+  },
+  {
+    "text": "Il",
+    "start": 9.08,
+    "end": 9.19
+  },
+  {
+    "text": "existe",
+    "start": 9.22,
+    "end": 9.54
+  },
+  {
+    "text": "UNE",
+    "start": 9.61,
+    "end": 9.77
+  },
+  {
+    "text": "formule",
+    "start": 9.81,
+    "end": 10.19
+  },
+  {
+    "text": "qui",
+    "start": 10.27,
+    "end": 10.43
+  },
+  {
+    "text": "fait",
+    "start": 10.47,
+    "end": 10.68
+  },
+  {
+    "text": "tout",
+    "start": 10.73,
+    "end": 10.95
+  },
+  {
+    "text": "ça",
+    "start": 10.99,
+    "end": 11.1
+  },
+  {
+    "text": "en",
+    "start": 11.13,
+    "end": 11.23
+  },
+  {
+    "text": "trois",
+    "start": 11.26,
+    "end": 11.53
+  },
+  {
+    "text": "secondes.",
+    "start": 11.59,
+    "end": 12.29
+  },
+  {
+    "text": "Tape",
+    "start": 12.44,
+    "end": 12.66
+  },
+  {
+    "text": "Somme",
+    "start": 12.7,
+    "end": 12.97
+  },
+  {
+    "text": "si,",
+    "start": 13.03,
+    "end": 13.3
+  },
+  {
+    "text": "sélectionne",
+    "start": 13.36,
+    "end": 13.96
+  },
+  {
+    "text": "la",
+    "start": 14.09,
+    "end": 14.2
+  },
+  {
+    "text": "colonne",
+    "start": 14.22,
+    "end": 14.6
+  },
+  {
+    "text": "des",
+    "start": 14.68,
+    "end": 14.84
+  },
+  {
+    "text": "noms,",
+    "start": 14.88,
+    "end": 15.26
+  },
+  {
+    "text": "le",
+    "start": 15.34,
+    "end": 15.45
+  },
+  {
+    "text": "nom",
+    "start": 15.47,
+    "end": 15.63
+  },
+  {
+    "text": "du",
+    "start": 15.67,
+    "end": 15.78
+  },
+  {
+    "text": "vendeur,",
+    "start": 15.8,
+    "end": 16.34
+  },
+  {
+    "text": "puis",
+    "start": 16.46,
+    "end": 16.67
+  },
+  {
+    "text": "la",
+    "start": 16.72,
+    "end": 16.83
+  },
+  {
+    "text": "colonne",
+    "start": 16.85,
+    "end": 17.23
+  },
+  {
+    "text": "des",
+    "start": 17.31,
+    "end": 17.47
+  },
+  {
+    "text": "montants.",
+    "start": 17.51,
+    "end": 18.21
+  },
+  {
+    "text": "Et",
+    "start": 18.37,
+    "end": 18.47
+  },
+  {
+    "text": "voilà,",
+    "start": 18.5,
+    "end": 18.93
+  },
+  {
+    "text": "le",
+    "start": 19.02,
+    "end": 19.13
+  },
+  {
+    "text": "total",
+    "start": 19.16,
+    "end": 19.43
+  },
+  {
+    "text": "tombe",
+    "start": 19.49,
+    "end": 19.76
+  },
+  {
+    "text": "tout",
+    "start": 19.81,
+    "end": 20.03
+  },
+  {
+    "text": "seul.",
+    "start": 20.08,
+    "end": 20.56
+  },
+  {
+    "text": "Retiens",
+    "start": 20.67,
+    "end": 21.05
+  },
+  {
+    "text": "ça",
+    "start": 21.13,
+    "end": 21.24
+  },
+  {
+    "text": ":",
+    "start": 21.26,
+    "end": 21.53
+  },
+  {
+    "text": "dès",
+    "start": 21.59,
+    "end": 21.75
+  },
+  {
+    "text": "que",
+    "start": 21.79,
+    "end": 21.95
+  },
+  {
+    "text": "tu",
+    "start": 21.99,
+    "end": 22.09
+  },
+  {
+    "text": "dois",
+    "start": 22.12,
+    "end": 22.33
+  },
+  {
+    "text": "additionner",
+    "start": 22.38,
+    "end": 22.98
+  },
+  {
+    "text": "selon",
+    "start": 23.11,
+    "end": 23.38
+  },
+  {
+    "text": "une",
+    "start": 23.43,
+    "end": 23.6
+  },
+  {
+    "text": "condition,",
+    "start": 23.63,
+    "end": 24.28
+  },
+  {
+    "text": "c'est",
+    "start": 24.42,
+    "end": 24.69
+  },
+  {
+    "text": "Somme",
+    "start": 24.75,
+    "end": 25.02
+  },
+  {
+    "text": "si,",
+    "start": 25.08,
+    "end": 25.35
+  },
+  {
+    "text": "pas",
+    "start": 25.41,
+    "end": 25.57
+  },
+  {
+    "text": "une",
+    "start": 25.61,
+    "end": 25.77
+  },
+  {
+    "text": "addition",
+    "start": 25.8,
+    "end": 26.24
+  },
+  {
+    "text": "à",
+    "start": 26.33,
+    "end": 26.39
+  },
+  {
+    "text": "la",
+    "start": 26.4,
+    "end": 26.51
+  },
+  {
+    "text": "main.",
+    "start": 26.53,
+    "end": 27.01
+  },
+  {
+    "text": "Suis-moi",
+    "start": 27.12,
+    "end": 27.55
+  },
+  {
+    "text": "pour",
+    "start": 27.65,
+    "end": 27.86
+  },
+  {
+    "text": "une",
+    "start": 27.91,
+    "end": 28.07
+  },
+  {
+    "text": "astuce",
+    "start": 28.11,
+    "end": 28.43
+  },
+  {
+    "text": "Excel",
+    "start": 28.5,
+    "end": 28.77
+  },
+  {
+    "text": "par",
+    "start": 28.83,
+    "end": 28.99
+  },
+  {
+    "text": "jour.",
+    "start": 29.03,
+    "end": 29.52
+  }
+]

@@ -5,6 +5,7 @@ import {SingleTipVideo} from './SingleTipVideo';
 import {LiveExcelCtrlT} from './LiveExcelCtrlT';
 import {LiveExcelAutoSum} from './LiveExcelAutoSum';
 import {LiveExcelFillHandle} from './LiveExcelFillHandle';
+import {LiveExcelSumIf, SUM_IF_TOTAL_FRAMES} from './LiveExcelSumIf';
 import {ExcelTutorialVideo} from './TutorialComposition';
 import {buildTutorialTimeline} from './tutorial/timeline';
 import {SINGLE_TIP_TOTAL_FRAMES} from './tutorial/singleTipTimeline';
@@ -82,6 +83,15 @@ export const RemotionRoot: React.FC = () => {
 				id="LiveExcelFillHandle"
 				component={LiveExcelFillHandle}
 				durationInFrames={920}
+				fps={FPS}
+				width={WIDTH}
+				height={HEIGHT}
+			/>
+
+			<Composition
+				id="LiveExcelSumIf"
+				component={LiveExcelSumIf}
+				durationInFrames={SUM_IF_TOTAL_FRAMES}
 				fps={FPS}
 				width={WIDTH}
 				height={HEIGHT}
